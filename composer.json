@@ -1,0 +1,19 @@
+{
+    "name": "frameworkatom/console",
+    "description": "Atom Framework Console",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "enzomarc",
+            "email": "emarc237@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Console\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
