@@ -1,7 +1,7 @@
 {
     "name": "frameworkatom/console",
     "description": "Atom Framework Console",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -15,5 +15,7 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+    
+    }
 }
