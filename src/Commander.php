@@ -25,6 +25,7 @@ class Commander
         unset($args[0], $args[1]);
         static::$args = $args;
         static::$base_path = $base;
+        static::create_config();
     }
 
     public static function run()
@@ -154,6 +155,16 @@ class Commander
             echo "\nApplication key set successfully.\n";
         else
             echo "\nError during key generation.\n";
+    }
+
+    public static function create_config()
+    {
+        $env = static::$base_path . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'env.json';
+        $example = static::$base_path . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'env.example.json';
+
+        if (!file_exists($env)) {
+            copy($example, $env);
+        }
     }
 
 }
