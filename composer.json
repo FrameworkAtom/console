@@ -1,7 +1,7 @@
 {
     "name": "frameworkatom/console",
     "description": "Atom Framework Console",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -14,6 +14,12 @@
             "Console\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^7.1.3",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-json": "*"
+    },
+	"minimum-stability": "dev",
+    "prefer-stable": true
 }
